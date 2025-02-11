@@ -1,0 +1,45 @@
+# Basic rules of the language
+plurals: When a keyword can have multiple values, it should be written in plural form. Example - "features" instead of "feature". Below a plural key words, a list of items should be provided.
+
+
+# Keywords and templates for a product blueprint
+blueprint: The top-level keyword for defining a blueprint. It contains sub-keywords such as product name, description, user groups, key features, and user interfaces.
+product name: The name of the product.
+description: Description of any object in the blueprint.
+user groups: The types of users who will use the product. Examples include site admin, author, anonymous reader, registered user.
+key features: A short summary of the main features of the product.
+user interfaces: The interfaces that the product will be available on. Examples include browser, mobile app.
+scope: The scope of any part of the product that's defined. Examples - MVP, future, phase 1, phase 2, next year. This would be any text that meaningfully defines when the product feature is expected to be ready.
+mvp: "Minimum viable product scope. In any section, writing {scope - MVP} lets everyone know that without this, the product cannot be launched. It is a best practice to carefully reduce what you need in the MVP so that the product can be launched quickly."
+details: The details of any part of the product that's defined. This could include a description, user stories, and acceptance criteria.
+id: A unique identifier for tracking. Examples include JIRA ID, EPIC-001.
+
+# template for an epic in a product blueprint
+epic name: A clear, concise title that describes the high-level feature or functionality. Example -  "User Authentication System"
+details: 
+  id: Unique identifier for tracking, e.g., JIRA ID or EPIC-001)
+  user groups: list of user groups who will benefit from this feature?
+  job: What the user is trying to achieve. Describe the core objective of the feature. Example -  "Enable users to authenticate using email and password, ensuring security and ease of access."
+  problem statement: What problem does this epic solve? Example - "When users try to log in, they currently do not have a secure authentication system, leading to potential security risks."
+  solution overview: Describe how the problem will be addressed. Example - "Implement a secure login system with email/password authentication, social login, and multi-factor authentication (MFA)."
+  key features: List the main features included in this epic.
+  out of scope: Clarify what is NOT included in this epic. Example - "Biometric authentication will not be included in this phase."
+  business outcome (expected impact): What measurable business benefits will this epic bring. Example - "Increase login security and reduce unauthorized access incidents by 40%."
+  stories: List the user stories that make up this epic.
+
+# template for a user story in a product blueprint
+user story name: [User Story Name]
+details:
+  id: Unique identifier for tracking, e.g., JIRA ID or STORY-001
+  user role: Who will benefit from this feature? Example - "As a user, I want to [action] so that [benefit]"
+  description: A detailed description of the user story. Example - "As a user, I want to securely log in to my account using email and password."
+  acceptance criteria:
+    - [Acceptance Criterion 1]
+    - [Acceptance Criterion 2]
+    - [Acceptance Criterion 3]
+    # ...additional acceptance criteria...
+  dependencies: List any dependencies on other teams, systems, or stories. Example - "Depends on the User Management module being implemented first."
+  priority: High / Medium / Low. Example - "High Priority (Critical Security Feature)"
+  business value: What measurable business benefits will this user story bring? Example - "Increase login security and reduce unauthorized access incidents by 40%."
+  non-functional requirements: List any performance, security, or compliance requirements. Example- "Performance: Login should not exceed 1 second response time."
+  stakeholders: List key people responsible for decision-making. Example - "Product Manager: John Doe, Engineering Lead: Jane Smith"

@@ -1,46 +1,136 @@
 blueprint:
-  product name: online book  # the name of the product
-  description: this is an online book  # a brief description of the product
-  user groups: 
+  product name: online book
+  description: This is a website for reading books online.
+  user groups:
     - site admin:
-        description: super user of the site. can access all features  # description of site admin
-    - author  # user group for authors
-    - anonymous reader  # user group for anonymous readers
-    - registered user  # user group for registered users
-  key features: 
-    - read a book online  # feature to read a book online
-    - leave comments for any page  # feature to leave comments on any page
-  user interfaces:
+        description: Super user of the site. Can access all features.
+    - author:
+        description: User who can write and publish books.
+    - anonymous reader:
+        description: User who can read books without logging in.
+    - registered user:
+        description: User who can read books and leave comments after logging in.
+  key features:
+    - read a book online
+    - leave comments for any page
+    - search for books
+    - bookmark pages
+  user interfaces: 
     - browser:
-        scope: mvp  # browser interface is part of the mvp
+        scope: MVP
     - mobile app:
-        scope: future  # mobile app interface is planned for the future
+        scope: later
 epics:
-  - epic name: read a book online  # epic for reading a book online
+  - epic name: Read a book online
     details:
-      description: as a user, i want to read a book online so that i can read it on any device  # description of the epic
-      user stories:
-        - user story name: read a book  # user story for reading a book
-          description: as a user, i want to read a book online so that i can read it on any device  # description of the user story
-          acceptance criteria:
-            - the book is displayed on the screen  # acceptance criterion 1
-            - the user can turn the page  # acceptance criterion 2
-            - the user can change the font size  # acceptance criterion 3
-            - the user can change the background color  # acceptance criterion 4
-            - the user can search for a word  # acceptance criterion 5
-            - the user can bookmark a page  # acceptance criterion 6
-            - the user can leave a comment  # acceptance criterion 7
-  - epic name: leave comments for any page  # epic for leaving comments on any page
-    description: as a user, i want to leave comments for any page so that i can share my thoughts with others  # description of the epic
-    user stories:
-      - user story name: leave a comment  # user story for leaving a comment
-        description: as a user, i want to leave a comment so that i can share my thoughts with others  # description of the user story
-        acceptance criteria:
-          - the user can leave a comment  # acceptance criterion 1
-          - the user can edit a comment  # acceptance criterion 2
-          - the user can delete a comment  # acceptance criterion 3
-          - the user can reply to a comment  # acceptance criterion 4
-          - the user can like a comment  # acceptance criterion 5
-          - the user can report a comment  # acceptance criterion 6
+      id: EPIC-001
+      user groups: [anonymous reader, registered user]
+      job: Enable users to read books online on any device.
+      problem statement: Users need a way to read books online without downloading them.
+      solution overview: Implement a web-based reader that displays books in a user-friendly format.
+      key features:
+        - Display book content
+        - Turn pages
+        - Change font size
+        - Change background color
+      out of scope: Offline reading functionality
+      business outcome (expected impact): Increase user engagement by providing an easy way to read books online.
+      stories:
+        - user story name: Display book content
+          details:
+            id: STORY-001
+            user role: As a user, I want to see the content of a book so that I can read it online.
+            description: Display the content of the book on the screen.
+            acceptance criteria:
+              - The book content is displayed on the screen.
+              - The user can scroll through the content.
+        - user story name: Turn pages
+          details:
+            id: STORY-002
+            user role: As a user, I want to turn the pages of the book so that I can read it sequentially.
+            description: Allow users to turn pages by clicking a button or swiping.
+            acceptance criteria:
+              - The user can turn to the next page.
+              - The user can turn to the previous page.
+        - user story name: Change font size
+          details:
+            id: STORY-003
+            user role: As a user, I want to change the font size so that I can read comfortably.
+            description: Provide an option to change the font size of the book content.
+            acceptance criteria:
+              - The user can increase the font size.
+              - The user can decrease the font size.
+        - user story name: Change background color
+          details:
+            id: STORY-004
+            user role: As a user, I want to change the background color so that I can read comfortably.
+            description: Provide an option to change the background color of the book content.
+            acceptance criteria:
+              - The user can change the background color to a predefined set of colors.
+  - epic name: Leave comments for any page
+    details:
+      id: EPIC-002
+      user groups: [registered user]
+      job: Enable users to leave comments on any page of the book.
+      problem statement: Users need a way to share their thoughts and feedback on specific pages of the book.
+      solution overview: Implement a commenting system that allows users to leave comments on any page.
+      key features:
+        - Leave a comment
+        - Edit a comment
+        - Delete a comment
+        - Reply to a comment
+        - Like a comment
+        - Report a comment
+      out of scope: Anonymous commenting
+      business outcome (expected impact): Increase user interaction and engagement by allowing users to share their thoughts.
+      stories:
+        - user story name: Leave a comment
+          details:
+            id: STORY-005
+            user role: As a registered user, I want to leave a comment on a page so that I can share my thoughts.
+            description: Allow users to leave comments on any page of the book.
+            acceptance criteria:
+              - The user can leave a comment on any page.
+              - The comment is displayed below the page content.
+        - user story name: Edit a comment
+          details:
+            id: STORY-006
+            user role: As a registered user, I want to edit my comment so that I can correct any mistakes.
+            description: Allow users to edit their own comments.
+            acceptance criteria:
+              - The user can edit their own comment.
+              - The edited comment is updated below the page content.
+        - user story name: Delete a comment
+          details:
+            id: STORY-007
+            user role: As a registered user, I want to delete my comment so that I can remove it if needed.
+            description: Allow users to delete their own comments.
+            acceptance criteria:
+              - The user can delete their own comment.
+              - The deleted comment is removed from the page content.
+        - user story name: Reply to a comment
+          details:
+            id: STORY-008
+            user role: As a registered user, I want to reply to a comment so that I can engage in discussions.
+            description: Allow users to reply to comments.
+            acceptance criteria:
+              - The user can reply to any comment.
+              - The reply is displayed below the original comment.
+        - user story name: Like a comment
+          details:
+            id: STORY-009
+            user role: As a registered user, I want to like a comment so that I can show my appreciation.
+            description: Allow users to like comments.
+            acceptance criteria:
+              - The user can like any comment.
+              - The like count is updated for the comment.
+        - user story name: Report a comment
+          details:
+            id: STORY-010
+            user role: As a registered user, I want to report a comment so that inappropriate content can be reviewed.
+            description: Allow users to report comments.
+            acceptance criteria:
+              - The user can report any comment.
+              - The reported comment is flagged for review.
 
 

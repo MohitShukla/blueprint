@@ -19,6 +19,9 @@ Software products often deviate from the original vision conceived by the produc
 3. ✅ **Automated Artifact Generation** – Facilitates automatic creation of **epics, user stories, test cases, API definitions, class structures, and user documentation**.  
 4. ✅ **Impact Analysis** – Helps assess the implications of any small or large change made to the product.  
 
+# What you have to do?
+Write a yaml file using the language rules and vocabulary defined in grammar.yaml. 
+
 # Getting Started
 1. A **Blueprint**__ folder follows the naming convention: blueprint-{application-name} (e.g., blueprint-online-book).
 2. Inside **Blueprint**__ folder, the complete product definition is written in YAML format.

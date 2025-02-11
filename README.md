@@ -18,3 +18,6 @@ Software products often deviate from the original vision conceived by the produc
 2. ✅ **Unified Communication** – Enables all stakeholders—**entrepreneurs, customers, product managers, product owners, architects, and developers**—to speak a common language.  
 3. ✅ **Automated Artifact Generation** – Facilitates automatic creation of **epics, user stories, test cases, API definitions, class structures, and user documentation**.  
 4. ✅ **Impact Analysis** – Helps assess the implications of any small or large change made to the product.  
+
+# Getting Started
+A blueprint folder is simply caled **blueprint-{application-name}**. Ex: blueprint-online-book 

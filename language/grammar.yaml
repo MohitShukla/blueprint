@@ -1,5 +1,5 @@
 # Basic rules of the language
-plurals: When a keyword can have multiple values, it should be written in plural form. Example - "features" instead of "feature". Below a plural key words, a list of items should be provided.
+plurals: When a keyword can have multiple values, it should be written in plural form. Example - "features" instead of "feature". Below a plural key words, a list of items should be provided. Plural could also mean that the value is a object containing multiple keys. Example - "details" could contain multiple keys like "id", "user role", "description", etc.
 
 
 # Keywords and templates for a product blueprint

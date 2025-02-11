@@ -1,16 +1,46 @@
 blueprint:
-  product name: online book
-  description: This is an online book
+  product name: online book  # the name of the product
+  description: this is an online book  # a brief description of the product
   user groups: 
-    - site admin
-    - author
-    - anonymous reader
-    - registered user
+    - site admin:
+        description: super user of the site. can access all features  # description of site admin
+    - author  # user group for authors
+    - anonymous reader  # user group for anonymous readers
+    - registered user  # user group for registered users
   key features: 
-    - read a book online
-    - leave comments for any page
+    - read a book online  # feature to read a book online
+    - leave comments for any page  # feature to leave comments on any page
   user interfaces:
-    - browser
-          scope: MVP
-    - mobile app
-     
+    - browser:
+        scope: mvp  # browser interface is part of the mvp
+    - mobile app:
+        scope: future  # mobile app interface is planned for the future
+epics:
+  - epic name: read a book online  # epic for reading a book online
+    details:
+      description: as a user, i want to read a book online so that i can read it on any device  # description of the epic
+      user stories:
+        - user story name: read a book  # user story for reading a book
+          description: as a user, i want to read a book online so that i can read it on any device  # description of the user story
+          acceptance criteria:
+            - the book is displayed on the screen  # acceptance criterion 1
+            - the user can turn the page  # acceptance criterion 2
+            - the user can change the font size  # acceptance criterion 3
+            - the user can change the background color  # acceptance criterion 4
+            - the user can search for a word  # acceptance criterion 5
+            - the user can bookmark a page  # acceptance criterion 6
+            - the user can leave a comment  # acceptance criterion 7
+  - epic name: leave comments for any page  # epic for leaving comments on any page
+    description: as a user, i want to leave comments for any page so that i can share my thoughts with others  # description of the epic
+    user stories:
+      - user story name: leave a comment  # user story for leaving a comment
+        description: as a user, i want to leave a comment so that i can share my thoughts with others  # description of the user story
+        acceptance criteria:
+          - the user can leave a comment  # acceptance criterion 1
+          - the user can edit a comment  # acceptance criterion 2
+          - the user can delete a comment  # acceptance criterion 3
+          - the user can reply to a comment  # acceptance criterion 4
+          - the user can like a comment  # acceptance criterion 5
+          - the user can report a comment  # acceptance criterion 6
+
+

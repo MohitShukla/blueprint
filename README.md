@@ -1,5 +1,5 @@
 # **Blueprint**  
-A structured language for defining software products with clarity and precision.
+A structured **language for defining software products** with clarity and precision with a **near zero learning curve**. 
 
 ## **Problem**  
 Software products often deviate from the original vision conceived by the product's creators, leading to misalignment between stakeholders and implementation.
@@ -20,4 +20,7 @@ Software products often deviate from the original vision conceived by the produc
 4. ✅ **Impact Analysis** – Helps assess the implications of any small or large change made to the product.  
 
 # Getting Started
-A blueprint folder is simply caled **blueprint-{application-name}**. Ex: blueprint-online-book 
+1. A **Blueprint**__ folder follows the naming convention: blueprint-{application-name} (e.g., blueprint-online-book).
+2. Inside **Blueprint**__ folder, the complete product definition is written in YAML format.
+3. The expected YAML structure is predefined as part of the Blueprint language, where each key has a specific meaning and purpose.
+4. The best way to get started? Just start! Blueprint is designed to be simple and intuitive—you’ll understand it as you go. 😊

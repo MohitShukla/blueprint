@@ -34,9 +34,9 @@ details:
   user role: Who will benefit from this feature? Example - "As a user, I want to [action] so that [benefit]"
   description: A detailed description of the user story. Example - "As a user, I want to securely log in to my account using email and password."
   acceptance criteria:
-    - [Acceptance Criterion 1]
-    - [Acceptance Criterion 2]
-    - [Acceptance Criterion 3]
+    - Acceptance Criterion 1
+    - Acceptance Criterion 2
+    - Acceptance Criterion 3
     # ...additional acceptance criteria...
   dependencies: List any dependencies on other teams, systems, or stories. Example - "Depends on the User Management module being implemented first."
   priority: High / Medium / Low. Example - "High Priority (Critical Security Feature)"

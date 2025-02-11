@@ -1,0 +1,8 @@
+blueprint: The top-level keyword for defining a blueprint. It contains sub-keywords such as product name, description, user groups, key features, and user interfaces.
+product name: The name of the product.
+description: Description of any object in the blueprint.
+user groups: The types of users who will use the product. Examples include site admin, author, anonymous reader, registered user.
+key features: A short summary of the main features of the product.
+user interfaces: The interfaces that the product will be available on. Examples include browser, mobile app.
+scope: The scope of any part of the product that's defined. Examples: MVP, future, phase 1, phase 2, next year. This would be any text that meaningfully defines when the product feature is expected to be ready.
+MVP: "Minimum viable product scope. In any section, writing {scope: MVP} lets everyone know that without this, the product cannot be launched. It is a best practice to carefully reduce what you need in the MVP so that the product can be launched quickly."

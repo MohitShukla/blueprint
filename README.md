@@ -3,7 +3,7 @@ A structured **language for defining software products** with clarity and precis
 
 ## **Problem**  
 Software products and features often deviate from the original vision conceived by the product's creators. 
-Cause: There is mostly a misalignment between stakeholders and implementation. The product idea passes from customer > business manager > product owner > engineering leaders > architects > developers > test engineers. People fail to communicate clearly.  
+Cause: There is mostly a misalignment between stakeholders and implementation. The product idea passes from customer > business manager > product owner > engineering leaders > architects > developers > test engineers. During a chain of comunicaiton, often the intent and idea get distorted at each step as it moves to the downstream stakeholders.   
 
 
 

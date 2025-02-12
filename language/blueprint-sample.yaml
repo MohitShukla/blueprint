@@ -1,0 +1,32 @@
+blueprint:
+  product name: 
+  description: 
+  user groups:
+    - site admin:
+        description: 
+   key features:
+    - feature1
+  user interfaces: 
+    - browser:
+        scope: MVP
+    - mobile app:
+        scope: later
+epics:
+  - epic name: epic1
+    details:
+      id: EPIC-001
+      user groups: [anonymous reader, registered user]
+      job: 
+      problem statement: 
+      solution overview: 
+      key features:
+        - Display book content
+      out of scope: 
+      business outcome (expected impact): 
+      stories:
+        - user story name: 
+          details:
+            id: STORY-001
+            description: 
+            acceptance criteria:
+              - The book content is displayed on the screen.
